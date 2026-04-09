@@ -1,0 +1,19 @@
+:root {
+  --font-family-system:
+    system-ui, -apple-system, "Segoe UI", roboto, "Helvetica Neue", helvetica,
+    sans-serif;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 600;
+  src: url("/client/public/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: 400;
+  src: url("/client/public/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-display: swap;
+}

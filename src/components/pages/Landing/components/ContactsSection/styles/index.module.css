@@ -1,0 +1,131 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 100px 0;
+  background-color: var(--mantine-color-gray-0);
+}
+
+.sectionTitle {
+  margin-bottom: 16px;
+  font-family: Montserrat, system-ui, sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--mantine-color-gray-9);
+  text-align: center;
+}
+
+.sectionSubtitle {
+  max-width: 600px;
+  margin-right: auto;
+  margin-bottom: 60px;
+  margin-left: auto;
+  font-size: 18px;
+  color: var(--mantine-color-gray-6);
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.contactCards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactCard {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 24px;
+  background: white;
+  border: 1px solid var(--mantine-color-gray-2);
+  border-radius: 12px;
+}
+
+.contactIcon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  background: linear-gradient(
+    135deg,
+    var(--mantine-color-brand-0),
+    var(--mantine-color-brand-1)
+  );
+  border-radius: 10px;
+}
+
+.contactLabel {
+  margin-bottom: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--mantine-color-gray-5);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contactValue {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--mantine-color-gray-8);
+}
+
+.contactLink {
+  color: var(--mantine-color-brand-7);
+  text-decoration: none;
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+}
+
+.formWrapper {
+  padding: 32px;
+  background: white;
+  border: 1px solid var(--mantine-color-gray-2);
+  border-radius: 12px;
+}
+
+.formTitle {
+  margin-bottom: 8px;
+  font-family: Montserrat, system-ui, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--mantine-color-gray-9);
+}
+
+.formSubtitle {
+  margin-bottom: 24px;
+  font-size: 15px;
+  color: var(--mantine-color-gray-6);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (width <= 768px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .sectionTitle {
+    font-size: 28px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,93 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 100px 0;
+  background-color: var(--mantine-color-gray-0);
+}
+
+.sectionTitle {
+  margin-bottom: 16px;
+  font-family: Montserrat, system-ui, sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--mantine-color-gray-9);
+  text-align: center;
+}
+
+.sectionSubtitle {
+  max-width: 600px;
+  margin-right: auto;
+  margin-bottom: 60px;
+  margin-left: auto;
+  font-size: 18px;
+  color: var(--mantine-color-gray-6);
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card {
+  padding: 32px;
+  background: white;
+  border: 1px solid var(--mantine-color-gray-2);
+  border-radius: 12px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 12px 40px rgb(0 0 0 / 8%);
+  transform: translateY(-4px);
+}
+
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--mantine-color-brand-7);
+  background: linear-gradient(
+    135deg,
+    var(--mantine-color-brand-0),
+    var(--mantine-color-brand-1)
+  );
+  border-radius: 12px;
+}
+
+.cardTitle {
+  margin-bottom: 12px;
+  font-family: Montserrat, system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--mantine-color-gray-9);
+}
+
+.cardDescription {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--mantine-color-gray-6);
+}
+
+@media (width <= 768px) {
+  .section {
+    padding: 60px 0;
+  }
+
+  .sectionTitle {
+    font-size: 28px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
